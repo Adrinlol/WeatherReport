@@ -1,0 +1,106 @@
+* {
+  margin:0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.1),rgba(1, 0, 0, 0.7)),url(../images/fog2.jpg);
+  background-size:cover;
+  background-position: center;
+  height:100vh;
+  animation: header 25s infinite;
+  text-shadow: 2px 3px #000;
+}
+
+@keyframes header{
+  50%{
+      background:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)),url(../images/birds.jpg);
+  }
+  75%{
+      background:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)),url(../images/fog.jpg);
+  }
+
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color:#fff;
+}
+
+.location {
+  align-items: center;
+  display: inline-block;
+  margin:-10px 300px;
+  position: absolute;
+  font-size: 20px;
+}
+
+
+.temperature {
+  height: 30vh;
+  width:50%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+}
+
+.degree-section span {
+  margin:10px;
+  font-size: 20px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
+
+/* Button */
+  .toggle-btn {
+  width:80px;
+  height:40px;
+  background:#000;
+  border-radius:30px;
+  padding:5px;
+  transition:all 300ms ease-in-out;
+  cursor: pointer;
+}
+  
+.toggle-btn > .inner-circle {
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:#fff;
+}
+  
+.toggle-btn.active {
+  background:#2F4F4F	;
+}
+  
+.toggle-btn.active > .inner-circle {
+  margin-left:40px;
+}
+
+  .icon {
+  width:128;
+  height:128;
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+  .temperature-description {
+  font-weight: 400;
+  font-size:25px;
+  font-style: italic;
+}
